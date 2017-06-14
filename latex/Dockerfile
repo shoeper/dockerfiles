@@ -2,6 +2,8 @@ FROM debian:testing
 
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula \
     select true | debconf-set-selections
+    
+RUN echo "deb http://deb.debian.org/debian testing contrib" >> /etc/apt/sources.list
 
 RUN cat /etc/apt/sources.list
 
