@@ -5,8 +5,6 @@ RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula \
     
 RUN echo "deb http://deb.debian.org/debian testing contrib" >> /etc/apt/sources.list
 
-RUN cat /etc/apt/sources.list
-
 RUN apt-get update && apt-get install -y \
   wget \
   git \
