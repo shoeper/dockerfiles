@@ -1,11 +1,7 @@
-# dockerfiles
+# latex dockerfile
 
-Here are some Dockerfiles.
-
-Since Docker Hub does not have GitLab integration (as of the writing of this
-file), this repository is hosted both [on GitLab][gl] and [on GitHub][gh].
+This repo is a fork of [aergus/dockerfiles][gh1] and can be found [on GitHub][gh2].
 
 
-[gl]: https://gitlab.com/aergus/dockerfiles
-[gh]: https://github.com/aergus/dockerfiles
-
+[gh2]: https://gitlab.com/beduino-project/dockerfiles
+[gh1]: https://github.com/aergus/dockerfiles
