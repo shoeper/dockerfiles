@@ -3,11 +3,13 @@ FROM debian:testing
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula \
     select true | debconf-set-selections
 
+RUN cat /etc/apt/sources.list
+
 RUN apt-get update && apt-get install -y \
   wget \
   git \
   make \
-  texlive-full && \
+  texlive-full \
   ttf-mscorefonts-installer && \
   # Removing documentation packages *after* installing them is kind of hacky,
   # but it only adds some overhead while building the image.
